@@ -5,11 +5,10 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <title>Front-end dev Exercise III</title>
-        <link rel="icon" href="/cubos-footer.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="icon" href="/favicon.ico" />
         {/* crossorigin */}
-        <link rel="preconnect" href="https://fonts.gstatic.com"  />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
       <body>
