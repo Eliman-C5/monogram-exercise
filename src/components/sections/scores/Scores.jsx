@@ -13,8 +13,7 @@ export const Scores = () => {
         <div className="w-1/4 h-ful border-white border-r"></div>
         <div className="w-1/4 h-full border-white border-r"></div>
         <div className="w-1/4 h-full border-white border-r"></div> */}
-      
-        {/* Hacer componente */}
+
         <TopAuditScores styles='hidden md:block' />
         
         {/* Hacer componente */}

@@ -4,14 +4,14 @@ import { TransparentImage } from './TransparentImage'
 export const ImagesBox = ({firstImage, secondImage}) => {
   return (
     <div className="hidden md:flex w-1/2 gap-4">
-        <div className="w-1/2 flex flex-col relative top-[25%]">
+        <div className="w-1/2 flex flex-col relative md:top-[35%] lg:top-[20%]">
           <img className='max-w-[280px]' src={firstImage} alt="" />
-          <TransparentImage positions={'top-[44%] left-[28%]'} />
+          <TransparentImage positions={'top-[20%] lg:top-[25%] left-[28%]'} />
         </div>
         
-        <div className="w-1/2 flex flex-col relative">
+        <div className="w-1/2 flex flex-col relative md:top-[15%] lg:top-0">
           <img className='max-w-[278px]' src={secondImage} alt="" />
-          <TransparentImage positions={'top-[35%] left-[40%]'} />
+          <TransparentImage positions={'top-[18%] lg:top-[20%] left-[40%]'} />
         </div>
     </div>
   )
