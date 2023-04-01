@@ -1,33 +1,65 @@
 import { CenteredTextBox } from '@/components/common/CenteredTextBox'
+import { InnerBackground } from '@/components/common/InnerBackground'
+import { InnerBorders } from '@/components/common/InnerBorders'
 import { LogosRow } from '@/components/common/LogosRow'
 import Section from '@/components/wrapper/Section'
-import { toolsLogos } from '@/data/texts'
+import { apiTool, toolsLogos } from '@/data/texts'
 import React from 'react'
+
+const icons = [
+  {
+    id: 1,
+    link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224673/monogram-exercise/ic3mlka8pjum3pwb7vch.svg',
+    name: 'Svelte icon',
+  },
+  {
+    id: 2,
+    link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224650/monogram-exercise/cvs3vibqucw89csj4cww.svg',
+    name: 'ReactJS icon',
+  },
+  {
+    id: 3,
+    link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224744/monogram-exercise/en2mnxu2dzoo6tclt8uy.svg',
+    name: 'NextJS icon',
+  },
+  {
+    id: 4,
+    link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680230917/monogram-exercise/ab1i4mwcy2yitzndmnce.svg',
+    name: 'VueJS icon',
+  }
+]
 
 export const Tools = () => {
   return (
     <div className='bg-custom-black translate-y-[-60px] md:translate-y-0'>
       <Section styles={''} margins='mt-0 mb-[80px] md:my-[120px] relative'>
-        <div className="hidden md:flex absolute top-0 bottom-0">
+      
+        <InnerBorders styles='hidden md:flex'>
           <LogosRow col={toolsLogos.col1} rowStyles='border-r border-l pt-[40%] lg:pt-[30%] xl:pt-[20%]' />
           <LogosRow col={toolsLogos.col2} rowStyles='border-r pt-[40%] xl:pt-[30%]' />
           <LogosRow col={toolsLogos.col3} rowStyles='border-r pt-[55%] xl:pt-[45%]' />
           <LogosRow col={toolsLogos.col4} rowStyles='border-r pt-[10%] xl:pt-0' />
-        </div>
+        </InnerBorders>
+        
+        <InnerBackground visible='flex md:hidden' />
         
         {/* Write here the carusel */}
+        <div className="flex slider md:hidden">
+          {
+            icons.map(icon => <img key={icon.id} src={icon.link} alt={icon.name} className='h-[90%] mx-4' />)
+          }
+        </div>
       
         <CenteredTextBox
-          title='api'
-          text='At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!'
-          // textStyles='text-[24px] leading-[38.88px] font-normal'
-          styles='translate-y-[160px] sm:translate-y-[300px] py-[50px] md:pt-[60%] lg:pt-[65%] relative z-10'
+          title={apiTool.title}
+          text={apiTool.text}
+          styles={apiTool.style}
           textSize='tools-markup-p'
         >
             <img 
-              src="https://res.cloudinary.com/datsipxkz/image/upload/v1680293977/monogram-exercise/i3mv2d2g1i0lo9nfg4y5.png" 
-              alt="" 
-              className='mx-auto mt-[10%] w-11/12 lg:w-full'  
+              src={apiTool.img} 
+              alt={apiTool.alt} 
+              className='mx-auto mt-[10%] md:w-1/2'  
             />
         </CenteredTextBox>
       

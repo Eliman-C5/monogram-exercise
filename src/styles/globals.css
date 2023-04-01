@@ -28,12 +28,17 @@ a {
   text-decoration: none;
 }
 
-.example {
-  box-shadow: inset 5px 5px 40px -40px #FFF;
-  opacity: .8;
-  z-index: 5;
-  left: 10%;
-  border: 20px solid rgba(255, 255, 255, 0.212);
+.slider {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  animation-name: slider;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  top: 150px;
 }
 
 .gradient-image {
@@ -46,14 +51,25 @@ a {
 
 .scores-gradient {
   background: 
-    linear-gradient(325deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%),
-    linear-gradient(180deg, #ffffff82 4%, #15151591 14%);
+  linear-gradient(325deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%),
+  linear-gradient(180deg, #ffffffd1 -2%, #151515 14%);
   border-radius: 68px;
   padding-top: 10%;
+  backdrop-filter: blur(60px);
   padding-bottom: 12%;
   padding-left: 2%;
   padding-right: 2%;
-  transform: translateY(10px)
+  transform: translateY(-80px);
+}
+
+.gradient-text {
+  background-image: linear-gradient(110deg, #fec05c80 20%, #d1251080, #b81edf80 102%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  
 }
 
 .title {
@@ -76,12 +92,13 @@ p {
 }
 
 .tools-markup-p, .score-p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
+/******************************************* RESPONSIVE *******************************************/
 @media screen and (min-width: 500px) {
     .title {
       font-size: 58px;
@@ -97,10 +114,10 @@ p {
     }
   
     .tools-markup-p .score-p {
-      font-size: 21px;
+      font-size: 19px;
       line-height: 45px;
       font-weight: 400;
-      letter-spacing: 1px;
+      letter-spacing: .1px;
     }
   
 }
@@ -117,6 +134,10 @@ p {
     font-size: 61px;
     line-height: 72px;
   }
+  
+  .slider {
+    top: 260px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -125,32 +146,21 @@ p {
     line-height: 92.5px;
     letter-spacing: -3px;
   }
-  
-  .tools-markup-p, .score-p {
-    font-size: 24px;
-    line-height: 38.88px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
-
-  .title {
-    font-size: 101px;
-    line-height: 100.5px;
-    letter-spacing: -3.5px;
-  }
-
-  .score-p {
-    font-size: 26px;
-    line-height: 42.12px;
-  }
   
   .score-title {
     line-height: 80px;
     font-size: 68px;
     font-weight: 900;
+  }
+  
+  .tools-markup-p, .score-p {
+    font-size: 22px;
+    line-height: 38.88px;
+    font-weight: 400;
+    letter-spacing: -.3px;
   }
   
   .scores-gradient {
@@ -159,11 +169,10 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .score-title {
-    line-height: 91.98px;
-    font-size: 76px;
-    font-weight: 900;
-    letter-spacing: .2px;
+  .title {
+    font-size: 101px;
+    line-height: 100.5px;
+    letter-spacing: -3.5px;
   }
 }
 
@@ -173,5 +182,42 @@ p {
     line-height: 152.5px;
     font-weight: 900;
     letter-spacing: -.3rem
+  }
+  
+  .tools-markup-p {
+    font-size: 24px;
+  }
+  
+  .score-p {
+    font-size: 26px;
+    line-height: 42.12px;
+  }
+  
+  .score-title {
+    line-height: 91.98px;
+    font-size: 76px;
+    font-weight: 900;
+    letter-spacing: .2px;
+  }
+}
+
+/******************************************* ANIMATIONS *******************************************/
+@keyframes slider {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  
+  5% {
+    opacity: 1;
+  }
+  
+  95% {
+    opacity: 1;
+  }
+  
+  100% {
+    right: 100%;
+    opacity: 0;
   }
 }
