@@ -14,17 +14,98 @@ export const markup = {
   secondImage: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680215517/monogram-exercise/aeern0kkn5dohgkzsabp.svg'
 }
 
+export const markupColors = {
+  col1: [
+    {
+      id: 1,
+      color: 'bg-blue'
+    },
+    {
+      id: 2,
+      color: 'bg-yellow'
+    },
+  ],
+  col2: [
+    {
+      id: 1,
+      color: 'bg-red opacity-[.6]'
+    },
+    {
+      id: 2,
+      color: 'bg-yellow opacity-[.6]'
+    },
+    {
+      id: 3,
+      color: 'bg-black opacity-[.6]'
+    },
+    {
+      id: 4,
+      color: 'bg-red opacity-[.6]'
+    },
+  ],
+  col3: [
+    {
+      id: 1,
+      color: 'bg-black opacity-[.3]'
+    },
+    {
+      id: 2,
+      color: 'bg-blue opacity-[.3]'
+    },
+    {
+      id: 3,
+      color: 'bg-aqua opacity-[.3]'
+    },
+    {
+      id: 4,
+      color: 'bg-blue opacity-[.3]'
+    },
+    {
+      id: 5,
+      color: 'bg-yellow opacity-[.3]'
+    }
+  ],
+  col4: [
+    {
+      id: 1,
+      color: 'bg-red opacity-[.2]'
+    },
+    {
+      id: 2,
+      color: 'bg-yellow opacity-[.2]'
+    },
+    {
+      id: 3,
+      color: 'bg-black opacity-[.2]'
+    },
+    {
+      id: 4,
+      color: 'bg-yellow opacity-[.2]'
+    },
+    {
+      id: 5,
+      color: 'bg-aqua opacity-[.2]'
+    },
+    {
+      id: 6,
+      color: 'bg-red opacity-[.2]'
+    },
+  ]
+}
+
 export const toolsLogos = {
     col1: [
     {
       id: 1,
       link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224650/monogram-exercise/cvs3vibqucw89csj4cww.svg',
       name: 'ReactJS icon',
+      styles: ''
     },
     {
       id: 2,
       link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224673/monogram-exercise/ic3mlka8pjum3pwb7vch.svg',
       name: 'Svelte icon',
+      styles: ''
     },
     ],
     col2: [
@@ -32,11 +113,13 @@ export const toolsLogos = {
       id: 1,
       link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224744/monogram-exercise/en2mnxu2dzoo6tclt8uy.svg',
       name: 'NextJS icon',
+      styles: ''
     },
     {
       id: 2,
       link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224769/monogram-exercise/neqkv12af9cltt6vcbhk.svg',
       name: 'ReactJS icon darker',
+      styles: ''
     },
     ],
     col3: [
@@ -44,6 +127,7 @@ export const toolsLogos = {
       id: 1,
       link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680230917/monogram-exercise/ab1i4mwcy2yitzndmnce.svg',
       name: 'VueJS icon',
+      styles: ''
     },
     ],
     col4: [
@@ -51,16 +135,19 @@ export const toolsLogos = {
       id: 1,
       link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224744/monogram-exercise/en2mnxu2dzoo6tclt8uy.svg',
       name: 'NextJS icon repeated',
+      styles: ''
     },
     {
       id: 2,
       link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224911/monogram-exercise/bepqzve0hrymzwmomgks.svg',
       name: 'ReactJS icon brighter',
+      styles: ''
     },
     {
       id: 3,
       link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224981/monogram-exercise/xewkukcto8ta9poyh1bg.svg',
       name: 'Svelte icon darker',
+      styles: ''
     },
     ]
 }

@@ -1,32 +1,38 @@
 import Section from '@/components/wrapper/Section'
 import { scoreImgs, scores } from '@/data/texts'
 import React from 'react'
+import { TopAuditScores } from './TopAuditScores'
 
 export const Scores = () => {
   return (
     <div className="bg-custom-black">
     
-      <Section margins='mt-[40px] md:mt-[80px] py-12'>
+      <Section margins='' styles=''>
       
-        <div className='w-4/5 mx-auto border border-white mt-8 p-4'>
+        {/* <div className="w-1/4 h-full border-white border-r border-l"></div>
+        <div className="w-1/4 h-ful border-white border-r"></div>
+        <div className="w-1/4 h-full border-white border-r"></div>
+        <div className="w-1/4 h-full border-white border-r"></div> */}
+      
+        {/* Hacer componente */}
+        <TopAuditScores styles='hidden md:block' />
         
-          <h4 className='text-center text-[76px] leading-[91.98px] font-black text-white mb-6'>top audit scores</h4>
+        {/* Hacer componente */}
+        <div className="hidden md:block py-[40px] md:py-[80px] relative">
         
-          <div className="flex justify-center">
-            {
-              scoreImgs.map(img => <img key={img.id} src={img.link} alt={img.name} className='w-[200px] h-[200px]' />)
-            }
-          </div>
-        
-          <div className="px-4">
-          {
-            scores.map(score => <p key={score.id} className='text-white'>{score.text}</p>)
-          }
-          </div>
+          <p>This is a project by me</p>
         
         </div>
     
       </Section>
+      
+      <TopAuditScores styles='block md:hidden' />
+      
+      <div className="block md:hidden py-[40px] md:py-[80px] relative">
+        
+          <p>This is a project by me</p>
+        
+      </div>
       
     </div>
   )
