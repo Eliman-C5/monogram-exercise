@@ -46,7 +46,7 @@ export const Tools = () => {
         {/* Write here the carusel */}
         <div className="flex slider md:hidden">
           {
-            icons.map(icon => <img key={icon.id} src={icon.link} alt={icon.name} className='h-[90%] mx-4' />)
+            icons.map(icon => <img key={icon.id} src={icon.link} alt={icon.name} className='h-[90%]' />)
           }
         </div>
       

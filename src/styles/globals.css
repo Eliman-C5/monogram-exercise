@@ -36,7 +36,7 @@ a {
   align-items: flex-start;
   animation-name: slider;
   animation-timing-function: linear;
-  animation-duration: 15s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   top: 150px;
 }
@@ -213,7 +213,7 @@ p {
   }
   
   95% {
-    opacity: 1;
+    opacity: .5;
   }
   
   100% {
