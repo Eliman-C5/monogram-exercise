@@ -57,7 +57,7 @@ export const ThreeSphere = ({size, style}) => {
   }, []);
 
   return <div className={`${style}`}>
-    <canvas ref={canvasRef} className='max-w-[100%] mx-auto relative z-10 top-[-32%] sm:top-[-25%] md:top-[-10%] lg:top-[50px] 2xl:top-[80px]'>
+    <canvas ref={canvasRef} className='max-w-[100%] mx-auto relative z-10 top-[-15%] sm:top-[7%] md:top-[20%] lg:top-[25%]'>
     </canvas>
   </div>
 };
