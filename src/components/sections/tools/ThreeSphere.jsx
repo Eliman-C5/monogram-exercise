@@ -5,7 +5,7 @@ export const ThreeSphere = ({size, style}) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    // Función para cargar la imagen en la textura
+    //Function to load the image into the texture
     const loadTexture = (url) => {
       const textureLoader = new THREE.TextureLoader();
       return textureLoader.load(url);
@@ -19,7 +19,7 @@ export const ThreeSphere = ({size, style}) => {
       1000
     );
 
-    // Ajustamos la posición de la luz para mejorar la reflexión metálica
+    //Adjust the position of the light to improve metallic reflection
     const light = new THREE.PointLight(0xffffff, 1);
     light.position.set(5, 5, 5);
     scene.add(light);
@@ -29,30 +29,34 @@ export const ThreeSphere = ({size, style}) => {
       alpha: true,
     });
 
-    // Configuración de la esfera
-    const geometry = new THREE.SphereGeometry(1, 64, 64, 0, Math.PI, 0, Math.PI);
+    //Sphere configuration
+    const geometry = new THREE.SphereGeometry(1, 9, 6, 0, Math.PI, 0, Math.PI);
     const material = new THREE.MeshStandardMaterial({
       map: loadTexture('https://res.cloudinary.com/datsipxkz/image/upload/v1680293977/monogram-exercise/i3mv2d2g1i0lo9nfg4y5.png'),
-      roughness: 0.2, // Ajustamos la rugosidad para mejorar la reflexión metálica
-      metalness: 0, // Ajustamos la metalicidad para mejorar la apariencia metálica
+      roughness: 0.2, //Now we adjust the roughness to improve the metallic reflection
+      metalness: 0, //This adjusts the metallicness to improve the metallic appearance
     });
     const sphere = new THREE.Mesh(geometry, material);
     scene.add(sphere);
 
-    // Configuración de la cámara y el renderizador
+    //Camera and renderer settings
     camera.position.z = size;
     renderer.setSize(window.innerWidth, window.innerHeight);
-
+    let myReqId
     const animate = () => {
-      requestAnimationFrame(animate);
+      myReqId = requestAnimationFrame(animate);
       renderer.render(scene, camera);
     };
 
     animate();
+    
+    return () => {
+      window.cancelAnimationFrame(myReqId)
+    }
   }, []);
 
   return <div className={`${style}`}>
-    <canvas ref={canvasRef} className='max-w-[100%] max-h-[100%] mx-auto relative z-10 top-[7%] sm:top-0 lg:top-[50px] 2xl:top-[80px]'>
+    <canvas ref={canvasRef} className='max-w-[100%] mx-auto relative z-10 top-[-55%] sm:top-[-25%] md:top-[-10%] lg:top-[50px] 2xl:top-[80px]'>
     </canvas>
   </div>
 };

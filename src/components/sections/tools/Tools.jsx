@@ -31,8 +31,8 @@ export const Tools = () => {
           textSize='tools-markup-p'
         >
           <ThreeSphere size={6.5} style='h-[450px] max-w-[400px] mx-auto sm:hidden' />
-          <ThreeSphere size={5} style='h-[600px] max-w-[500px] mx-auto hidden sm:block md:hidden' />
-          <ThreeSphere size={5} style='mx-auto hidden md:block' />
+          <ThreeSphere size={5.5} style='h-[700px] max-w-[620px] mx-auto hidden sm:block md:hidden' />
+          <ThreeSphere size={5} style='h-[850px] mx-auto hidden md:block' />
         </CenteredTextBox>
       
       </Section>

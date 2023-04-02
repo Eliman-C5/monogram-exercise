@@ -155,7 +155,7 @@ export const toolsLogos = {
 export const apiTool = {
   title: 'api',
   text: 'At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!',
-  style: 'translate-y-[160px] sm:translate-y-[300px] pt-[50px] md:pt-[60%] lg:pt-[65%] relative z-10',
+  style: 'translate-y-[160px] sm:translate-y-[300px] pt-[50px] md:pt-[72%] relative z-10',
   img: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680293977/monogram-exercise/i3mv2d2g1i0lo9nfg4y5.png',
   alt: '3D sphere'
 }
