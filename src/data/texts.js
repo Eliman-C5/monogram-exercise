@@ -155,10 +155,33 @@ export const toolsLogos = {
 export const apiTool = {
   title: 'api',
   text: 'At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!',
-  style: 'translate-y-[160px] sm:translate-y-[300px] py-[50px] md:pt-[60%] lg:pt-[65%] relative z-10',
+  style: 'translate-y-[160px] sm:translate-y-[300px] pt-[50px] md:pt-[60%] lg:pt-[65%] relative z-10',
   img: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680293977/monogram-exercise/i3mv2d2g1i0lo9nfg4y5.png',
   alt: '3D sphere'
 }
+
+export const toolIcons = [
+  {
+    id: 1,
+    link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224673/monogram-exercise/ic3mlka8pjum3pwb7vch.svg',
+    name: 'Svelte icon',
+  },
+  {
+    id: 2,
+    link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224650/monogram-exercise/cvs3vibqucw89csj4cww.svg',
+    name: 'ReactJS icon',
+  },
+  {
+    id: 3,
+    link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680224744/monogram-exercise/en2mnxu2dzoo6tclt8uy.svg',
+    name: 'NextJS icon',
+  },
+  {
+    id: 4,
+    link: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680230917/monogram-exercise/ab1i4mwcy2yitzndmnce.svg',
+    name: 'VueJS icon',
+  }
+]
 
 export const scoreImgs = [
   {

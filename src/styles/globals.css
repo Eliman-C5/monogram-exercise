@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+.webgl {
+  width: 600px;
+  height: 500px;
+}
+
 .slider {
   position: relative;
   height: 150px;
