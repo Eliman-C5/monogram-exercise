@@ -11,7 +11,7 @@ import { ThreeSphere } from './ThreeSphere'
 
 export const Tools = () => {
   return (
-    <div className='bg-custom-black translate-y-[-60px] md:translate-y-0'>
+    <div className='bg-custom-black tool'>
       <Section styles={''} margins='mt-0 mb-[80px] md:my-[120px] relative'>
       
         <InnerBorders styles='hidden md:flex'>

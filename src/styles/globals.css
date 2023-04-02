@@ -28,11 +28,6 @@ a {
   text-decoration: none;
 }
 
-.webgl {
-  width: 600px;
-  height: 500px;
-}
-
 .slider {
   position: relative;
   height: 150px;
@@ -64,7 +59,7 @@ a {
   padding-bottom: 12%;
   padding-left: 2%;
   padding-right: 2%;
-  transform: translateY(-80px);
+  transform: translateY(-50px);
 }
 
 .gradient-text {
@@ -94,6 +89,13 @@ a {
 p {
   font-weight: 300;
   letter-spacing: 1px;
+}
+
+.tool {
+  box-shadow: 10px 25px 14px #c7c7c7;
+  --tw-translate-y: -60px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  
 }
 
 .tools-markup-p, .score-p {
@@ -143,6 +145,10 @@ p {
   .slider {
     top: 260px;
   }
+  
+  .scores-gradient {
+    transform: translateY(-80px);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -150,6 +156,11 @@ p {
     font-size: 90px;
     line-height: 92.5px;
     letter-spacing: -3px;
+  }
+  
+  .tool {
+    --tw-translate-y: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 

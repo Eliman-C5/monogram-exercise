@@ -2,6 +2,7 @@ import { ImagesBox } from '@/components/common/ImagesBox'
 import { ParagraphBox } from '@/components/common/ParagraphBox'
 import Section from '@/components/wrapper/Section'
 import { markup, markupColors } from '@/data/texts'
+import Image from 'next/image'
 import React from 'react'
 import { ColorRow } from './ColorRow'
 
@@ -15,7 +16,13 @@ export const Markup = () => {
           paragraphText={markup.paragraph} 
           paragraphStyles='text-[#414141] tools-markup-p'
         >
-          <img className='h-1/3 sm:h-[60%] md:h-[35%] lg::h-full mx-auto relative top-[5%] sm:top-[3%]' src={markup.imgLink} alt="" />
+          <Image 
+            className='h-1/3 sm:h-[60%] md:h-[35%] lg::h-full mx-auto relative top-[5%] sm:top-[3%]' 
+            src={markup.imgLink} 
+            alt="several color blocks" 
+            width={521}
+            height={356}
+          />
         </ParagraphBox>
         <ImagesBox 
           firstImage={markup.firstImage}
@@ -30,6 +37,9 @@ export const Markup = () => {
       
       <div className="w-full mx-auto max-w-[1512px]">
         <ColorRow styles='' col={markupColors.col3} />
+      </div>
+      
+      <div className="w-full mx-auto max-w-[1640px]">
         <ColorRow styles='' col={markupColors.col4} />
       </div>
     </>

@@ -2,16 +2,51 @@ export const header = {
   title: 'jamstack',
   paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.',
   imgLink: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680215517/monogram-exercise/w9oekgdnaew6dxgl2wea.png',
-  firstImage: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680201362/monogram-exercise/nvorrnj0z91fv6rxs1w0.svg',
-  secondImage: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680201362/monogram-exercise/zvl1aevvmbqwidbcf5ys.svg'
+  firstImage: {
+    src: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680201362/monogram-exercise/nvorrnj0z91fv6rxs1w0.svg',
+    alt: 'A first gradient figure in the right side',
+    width: 280,
+    height: 629
+  },
+  secondImage: {
+    src: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680201362/monogram-exercise/zvl1aevvmbqwidbcf5ys.svg',
+    alt: 'A second gradient figure in the right side',
+    width: 278,
+    height: 670
+  }
 }
 
 export const markup = {
   title: 'markup',
   paragraph: 'When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website. The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN like Vercel’s Edge Network.',
   imgLink: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680215517/monogram-exercise/fwepwouw4qmwd8icxfqc.png',
-  firstImage: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680215517/monogram-exercise/uxmc7lyxerh2shibebes.svg',
-  secondImage: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680215517/monogram-exercise/aeern0kkn5dohgkzsabp.svg'
+  firstImage: {
+    src: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680215517/monogram-exercise/uxmc7lyxerh2shibebes.svg',
+    alt: 'A first block figure in the right side',
+    width: 280,
+    height: 629
+  },
+  secondImage: {
+    src: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680215517/monogram-exercise/aeern0kkn5dohgkzsabp.svg',
+    alt: 'A first block figure in the right side',
+    width: 278,
+    height: 670
+  }
+}
+
+export const javascriptImages = {
+  arrow: {
+    src: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680437268/monogram-exercise/tdqbblcaugi8zksgrx6a.svg',
+    alt: 'Arrow'
+  },
+  gradientSquare: {
+    src: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680217403/monogram-exercise/bg9eamb5rwc7ohkvk9da.png',
+    alt: 'Gradient Square'
+  },
+  computer: {
+    src: 'https://res.cloudinary.com/datsipxkz/image/upload/v1680217403/monogram-exercise/jew8ptrrk2fps78ozsq9.png',
+    alt: 'Computer'
+  }
 }
 
 export const markupColors = {
