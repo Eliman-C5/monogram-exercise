@@ -6,17 +6,17 @@ Hello friends of Monogram, I am going to talk a little about the process and my 
 Ok, let's start. First of all, I decided to create a simple folder structure and not use methodologies like Atomic Design because, being a relatively smaller project, I wanted to have more flexibility so as not to waste time in the process.
 
 src ----->
-          components -------> 
-                              common (Here I write the reusable components)
+          components -------> common (Here I write the reusable components)
                               
-                              section (Here will be the sections of the page)
+                     -------> section (Here will be the sections of the page)
                               
-                              wrapper (I created a wrapper folder to handle the components that can wrap the sections and that are a fundamental part of the page structure)
+                     -------> wrapper (I created a wrapper folder to handle the components that can wrap the sections and that are a fundamental part of the page                                              structure)
                               
-    ----->
-          data (I usually create a data folder to place information such as texts, image paths, and arrays that will be used in the components)
-          pages
-          styles
+src                              
+    -----> data (I usually create a data folder to place information such as texts, image paths, and arrays that will be used in the components)
+           pages
+           styles
+          
 
 ## Responsive
 
@@ -51,7 +51,9 @@ I wanted to take more advantage of the ThreeJS ecosystem, that is, tools like re
 * I have attached photos from [PageSpeedInsights](https://pagespeed.web.dev/)
 
 Mobile
+
 ![Mobile](https://res.cloudinary.com/datsipxkz/image/upload/v1680462748/monogram-exercise/tu6j4eeyydt5os71oryc.png)
 
 Desktop
+
 ![Desktop](https://res.cloudinary.com/datsipxkz/image/upload/v1680462748/monogram-exercise/nnv1v6q0ubml24arpkyg.png)
