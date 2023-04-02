@@ -4,8 +4,7 @@ Hello friends of Monogram, I am going to talk a little about the process and my 
 
 ## Process
 Ok, let's start. First of all, I decided to create a simple folder structure and not use methodologies like Atomic Design because, being a relatively smaller project, I wanted to have more flexibility so as not to waste time in the process.
-
-src 
+ 
     * components 
               - common (Here I write the reusable components)
                               
