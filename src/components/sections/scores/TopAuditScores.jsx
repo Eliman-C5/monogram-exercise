@@ -10,7 +10,7 @@ export const TopAuditScores = ({styles = ''}) => {
         
         <h4 className='text-center score-title text-white md:mb-6'>top audit scores</h4>
           
-        <ScoreImage link={scoreImgs[0].link} alt={scoreImgs[0].name} styles='w-[200px] h-[200px] mx-auto lg:hidden' />
+        <ScoreImage link={scoreImgs[0].link} name={scoreImgs[0].name} styles='w-[200px] h-[200px] mx-auto lg:hidden' />
         
         <ScoreImagesBox />
         
