@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Front-end dev Exercise III</title>
         <link rel="icon" href="/star.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
