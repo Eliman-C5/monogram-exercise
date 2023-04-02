@@ -11,8 +11,8 @@ export const Javascript = () => {
           className='mx-auto h-[350px] sm:h-[500px] md:h-full'
           src={javascriptImages.gradientSquare.src}
           alt={javascriptImages.gradientSquare.alt}
-          width={1300}
-          height={800}
+          width={1378}
+          height={1350}
         />
         
         <CenteredTextBox 

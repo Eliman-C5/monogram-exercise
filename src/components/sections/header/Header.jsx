@@ -20,7 +20,7 @@ export const Header = () => {
           src={header.imgLink} 
           alt="Points arrow that takes you to next section"
           width={91}
-          height={533}
+          height={315}
         />
       </ParagraphBox>
       <ImagesBox 

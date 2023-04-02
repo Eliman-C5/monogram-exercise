@@ -20,8 +20,8 @@ export const Markup = () => {
             className='h-1/3 sm:h-[60%] md:h-[35%] lg::h-full mx-auto relative top-[5%] sm:top-[3%]' 
             src={markup.imgLink} 
             alt="several color blocks" 
-            width={521}
-            height={356}
+            width={330}
+            height={223}
           />
         </ParagraphBox>
         <ImagesBox 
