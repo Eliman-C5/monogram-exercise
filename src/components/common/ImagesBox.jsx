@@ -12,6 +12,7 @@ export const ImagesBox = ({firstImage, secondImage}) => {
             alt={firstImage.alt} 
             width={firstImage.width}
             height={firstImage.height}
+            priority
           />
           <TransparentImage positions={'top-[20%] lg:top-[25%] left-[28%]'} />
         </div>
@@ -23,6 +24,7 @@ export const ImagesBox = ({firstImage, secondImage}) => {
             alt={secondImage.alt} 
             width={secondImage.width}
             height={secondImage.height}
+            priority
           />
           <TransparentImage positions={'top-[18%] lg:top-[20%] left-[40%]'} />
         </div>
