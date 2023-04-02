@@ -30,7 +30,7 @@ export const ThreeSphere = ({size, style}) => {
     });
 
     //Sphere configuration
-    const geometry = new THREE.SphereGeometry(1, 9, 6, 0, Math.PI, 0, Math.PI);
+    const geometry = new THREE.SphereGeometry(1, 32, 32, 0, Math.PI, 0, Math.PI);
     const material = new THREE.MeshStandardMaterial({
       map: loadTexture('https://res.cloudinary.com/datsipxkz/image/upload/v1680293977/monogram-exercise/i3mv2d2g1i0lo9nfg4y5.png'),
       roughness: 0.2, //Now we adjust the roughness to improve the metallic reflection
@@ -42,6 +42,7 @@ export const ThreeSphere = ({size, style}) => {
     //Camera and renderer settings
     camera.position.z = size;
     renderer.setSize(window.innerWidth, window.innerHeight);
+    
     let myReqId
     const animate = () => {
       myReqId = requestAnimationFrame(animate);
@@ -56,7 +57,7 @@ export const ThreeSphere = ({size, style}) => {
   }, []);
 
   return <div className={`${style}`}>
-    <canvas ref={canvasRef} className='max-w-[100%] mx-auto relative z-10 top-[-55%] sm:top-[-25%] md:top-[-10%] lg:top-[50px] 2xl:top-[80px]'>
+    <canvas ref={canvasRef} className='max-w-[100%] mx-auto relative z-10 top-[-50%] sm:top-[-25%] md:top-[-10%] lg:top-[50px] 2xl:top-[80px]'>
     </canvas>
   </div>
 };
